@@ -1,8 +1,8 @@
 import React from 'react'
-import './Button.css'
+import style from './Button.module.css'
 
 export default function Button() {
   return (
-    <button className='feedbackButton' >Give Feedback</button>
+    <button className={style.feedbackButton} >Give Feedback</button>
   )
 }
