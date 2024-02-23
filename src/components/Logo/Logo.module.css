@@ -1,6 +1,6 @@
-.LogoIcon{
-    /* display: flex;
-    align-items: center; */
-    margin-left:32px
-    /* line-height: 27px; */
+.logoContainer{
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 32px;
 }
+
