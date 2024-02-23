@@ -8,8 +8,11 @@
    border:none;
    outline: none;
    cursor: pointer;
-   font-style: Poppins;
+   font-family: Poppins;
    font-weight: 600;
    font-size: 18px;
-   margin:32px;
+   line-height: 27px;
+   letter-spacing: 0.25px;
+   text-align: center;
+
 }
