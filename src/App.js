@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar'
-import  './App.css'
+import HeroImage from './components/HeroImage/HeroImage';
 import { StyledEngineProvider } from '@mui/material/styles'
+import './style.css'
+
 
 function App () {
   
@@ -10,6 +12,7 @@ function App () {
     <React.Fragment>
       <StyledEngineProvider injectFirst >
           <Navbar />
+          <HeroImage />
       </StyledEngineProvider>
     </React.Fragment>
   );
