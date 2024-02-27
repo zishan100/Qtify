@@ -1,11 +1,10 @@
 import React from 'react'
-import LogoImg from '../../assets/logoimage.png'
 import style from './Logo.module.css'
 
-export default function Logo() {
+export default function Logo({pngImage}) {
   return (
     <div className={style.logoContainer} >
-        <img  src={LogoImg} alt="Qtify Logo"  />  
+        <img  src={pngImage} alt="Qtify Logo"  />  
     </div>
     
   )
