@@ -1,0 +1,25 @@
+.container{
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   color:var(--white-color);
+   width: 159px;
+   height: 250px;
+}
+
+.imageCard{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+    height:220px;
+}
+
+.chipButton{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width:105px;
+    height:25px;
+    margin-top: 8px;
+}

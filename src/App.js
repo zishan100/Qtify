@@ -1,18 +1,56 @@
-import React from 'react';
+import React , {useState,useEffect} from 'react';
+import axios from 'axios'
 import Navbar from './components/Navbar/Navbar'
 import HeroImage from './components/HeroImage/HeroImage';
+import Section from './components/Section/Section';
 import { StyledEngineProvider } from '@mui/material/styles'
 import './style.css'
-
+import { fetchTopAlbumsApi , fetchNewAlbumsApi } from './components/Api/Api';
 
 function App () {
   
+  const [topAlbumList , setTopAlbumList] = useState([]);
+  const [newAlbumList , setNewAlbumList ] = useState([]);
+
+  useEffect(()=>{
+    fetchTopAlbums()     
+  },[])
+  
+  useEffect(()=>{
+    fetchNewAlbums();
+  },[])
+
+  const fetchTopAlbums = async()=>{
+    try{
+      const apiData = await fetchTopAlbumsApi();
+      console.log(apiData);
+      if( apiData && apiData.length > 0 )
+          setTopAlbumList(apiData);
+    }catch(err){
+      console.log(err);
+    }            
+  }
+
+  const fetchNewAlbums = async()=>{
+    try{
+      const apiData = await fetchNewAlbumsApi();
+      // console.log(apiRes.data);
+      if(apiData && apiData.length > 0 ) 
+          setNewAlbumList(apiData);
+    }catch(err){
+      console.log(err);
+    }            
+  }
     
   return (
     <React.Fragment>
       <StyledEngineProvider injectFirst >
           <Navbar />
           <HeroImage />
+          <Section albums={topAlbumList} title='Top Albums' />
+          <hr  className='hrline' />
+          <Section albums={newAlbumList} title='New Albums' /> 
+          <hr  className='hrline' />
       </StyledEngineProvider>
     </React.Fragment>
   );
