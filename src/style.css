@@ -13,3 +13,9 @@ body{
     background-color:var(--black-color);
     font-family: "Poppins", sans-serif;
 }
+
+
+.hrline{
+   border: 1px solid var(--primary-color);
+   margin: 30px 0px;
+}
