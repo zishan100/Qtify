@@ -1,0 +1,9 @@
+
+.sliderContainer{
+    /* width:100%; */
+    display: flex; 
+    justify-content: center;
+}
+.slider{
+    width:80%;
+}
