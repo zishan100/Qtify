@@ -1,7 +1,7 @@
 .container{
   color: var(--white-color);
   /* padding:0px 12px 0px 12px; */
-  /* margin-left:1rem; */
+  margin:0px 32px;
 }
 
 .sectionHeader{
@@ -9,7 +9,7 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 31px
+  /* margin: 0px 31px */
 }
 
 .sectionButton{
@@ -17,4 +17,8 @@
   font-weight: 600;
   /* font-size: 20px; */
   text-transform: capitalize;
+}
+
+.albumsTitle{
+  margin-left:31px;
 }

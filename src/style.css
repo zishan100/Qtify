@@ -16,6 +16,16 @@ body{
 
 
 .hrline{
-   border: 1px solid var(--primary-color);
+   border: 2px solid var(--primary-color);
    margin: 30px 0px;
+}
+
+.slick-prev{
+    left: -50px !important;
+}
+  
+.slick-prev:before, .slick-next:before{
+    color: var(--primary-color) !important;
+    font-size: 2rem !important;
+    opacity: 1;
 }
