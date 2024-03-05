@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useRef , useEffect} from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,16 +7,26 @@ import style from './Carousel.module.css'
 import Card from '../Card/Card';
 import { settings } from '../const';
 
-function Carousel ({albums,component}) {
+function Carousel ({data,component}) {
     
+    let slickRef = useRef(null)
+    
+    useEffect(() => {
+        slickRef.current.slickGoTo(0)
+        
+      }, [data])
     
     return (
         <div className={style.sliderContainer} >
            
-            <Slider {...settings}  className={style.slider} >
+            <Slider 
+                {...settings}  
+                className={style.slider} 
+                ref={slickRef} 
+            >
             
             {
-                albums &&  albums.map((album)=>{
+                data &&  data.map((album)=>{
                     return (component(album))
                 })
             }

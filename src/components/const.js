@@ -2,8 +2,8 @@ export const settings = {
     // dots: true,
     infinite: false,
   //   lazyLoad:true,
-    speed: 300,
-    slidesToShow: 5,
+    speed: 500,
+    slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide:0,
     responsive: [
@@ -12,7 +12,7 @@ export const settings = {
           settings: {
             slidesToShow: 4,
             slidesToScroll: 1,
-            infinite:false
+            infinite:false,
           }
         },
         {
@@ -20,7 +20,6 @@ export const settings = {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            initialSlide: 3,
             infinite:false
           }
         },
@@ -29,7 +28,6 @@ export const settings = {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            initialSlide:2,
             infinite:false
           }
         }

@@ -19,7 +19,7 @@
 .chipButton{
     background-color: var(--black-color);
     color: var(--white-color);
-    width:105px;
+    width:120px;
     height:25px;
     margin-top: 8px;
 }

@@ -22,3 +22,7 @@
 .albumsTitle{
   margin-left:31px;
 }
+
+.tabColor{
+  color: var(--white-color) !important;
+}

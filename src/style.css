@@ -29,3 +29,11 @@ body{
     font-size: 2rem !important;
     opacity: 1;
 }
+
+.css-1aquho2-MuiTabs-indicator{
+    background-color: var(--primary-color);
+}
+
+.css-1pzu0y2{
+    margin-left:31px !important;
+}
